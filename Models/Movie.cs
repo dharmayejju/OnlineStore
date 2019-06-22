@@ -12,5 +12,9 @@ namespace OnlineStore.Models
         public DateTime ReleaseDate { get; set; }
 
         public string Genre { get; set; }
+
+        public byte[] Image { get; set; }
+
+        public string ImagePath { get; set; }
     }
 }

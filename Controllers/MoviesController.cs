@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Infrastructure;
 using OnlineStore.Models;
@@ -19,6 +22,15 @@ namespace OnlineStore.Controllers
         {
             const string sql = @"SELECT * FROM movies";
             var result = await _connection.QueryAsync<Movie>(sql);
+
+            foreach(var r in result)
+            {
+                var file = r.Image;
+                var base64 = Convert.ToBase64String(file);
+                var imgSrc = String.Format("data:image/jpg;base64,{0}", base64);
+                r.ImagePath = imgSrc;
+            }
+
             return View(result);
         }
     }
