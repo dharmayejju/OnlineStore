@@ -14,8 +14,8 @@ namespace OnlineStore.Infrastructure
 
         int Execute(string sql, object parameters = null, int? commandTimeout = null);
         Task<int> ExecuteAsync(string sql, object parameters = null, CancellationToken cancellationToken = default);
-
         IEnumerable<T> Query<T>(string sql, object parameters = null);
         Task<IEnumerable<T>> QueryAsync<T>(string sql, object parameters = null, CancellationToken cancellationToken = default, CommandType commandType = default);
+        T QuerySingle<T>(string sql, object parameters = null);
     }
 }

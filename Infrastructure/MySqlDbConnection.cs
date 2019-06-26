@@ -80,6 +80,10 @@ namespace OnlineStore.Infrastructure
         {
             return Db.QueryAsync<T>(new CommandDefinition(sql, parameters, cancellationToken: cancellationToken, commandType: commandType));
         }
+        public T QuerySingle<T>(string sql, object parameters = null)
+        {
+            return Db.QuerySingle<T>(sql, parameters);
+        }
 
     }
 }

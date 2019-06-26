@@ -27,3 +27,7 @@ C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\OnlineStore.dll
 C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\OnlineStore.pdb
 C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\OnlineStore.csproj.CopyComplete
 C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\Razor\Views\Movies\Index.g.cshtml.cs
+C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\OnlineStore.csprojAssemblyReference.cache
+C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\SignIn.g.cshtml.cs
+C:\learning\OnlineStore\OnlineStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
